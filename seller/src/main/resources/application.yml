@@ -3,4 +3,17 @@ server:
 
 spring:
   application:
-    name: seller_app
+    name: provider
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6001/eureka
+  instance:
+    instance-id: provider_name #自定义服务名称信息
+    prefer-ip-address: true #服务路径可以显示ip地址
+info:
+  app.name: provider_seller
+  company.name: provider_seller_company_name
+  build.artifactId: @project.artifactId@ #springboot 2.x 使用@动态获取，其他版本需根据具体情况调整
+  build.version: @project.version@

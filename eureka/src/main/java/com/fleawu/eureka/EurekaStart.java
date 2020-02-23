@@ -1,8 +1,8 @@
-package com.fleawu;
+package com.fleawu.eureka;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
  * 描述:
@@ -10,12 +10,13 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  * <p>
  *
  * @author tiaozao
- * @date 2020-02-16 21:22
+ * @date 2020-02-18 23:28
  */
+
 @SpringBootApplication
-@EnableEurekaClient
-public class SellerStart {
+@EnableEurekaServer
+public class EurekaStart {
     public static void main(String[] args) {
-        SpringApplication.run(SellerStart.class, args);
+        SpringApplication.run(EurekaStart.class, args);
     }
 }

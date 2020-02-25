@@ -13,6 +13,8 @@
         <module>user</module>
         <module>seller</module>
         <module>eureka</module>
+        <module>eureka01</module>
+        <module>eureka02</module>
     </modules>
 
 

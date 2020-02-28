@@ -1,7 +1,7 @@
-package com.fleawu.service.impl;
+package fleawu.service.impl;
 
 import com.fleawu.Book;
-import com.fleawu.service.BookService;
+import fleawu.service.BookService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -17,6 +17,6 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public Book sellBook() {
-        return new Book().setName("hehe").setPrice(99).setCode(1);
+        return new Book().setName("hehe").setPrice(99).setCode(2);
     }
 }

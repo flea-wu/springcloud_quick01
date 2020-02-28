@@ -1,12 +1,12 @@
 package com.flea.controller;
 
 import com.fleawu.Book;
+import com.fleawu.BookService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
 
 import javax.annotation.Resource;
-
 
 
 /**
@@ -21,10 +21,10 @@ import javax.annotation.Resource;
 public class UserController {
 
     @Resource
-    private RestTemplate restTemplate;
+    private BookService bookService;
 
     @GetMapping(value = "/buybook")
     public Book getuser() {
-        return restTemplate.getForObject("http://PROVIDER/buy/book", Book.class);
+        return bookService.sellBook();
     }
 }

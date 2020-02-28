@@ -20,4 +20,6 @@ public class Book {
 
     private Integer price;
 
+    private Integer code;
+
 }

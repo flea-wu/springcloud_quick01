@@ -8,3 +8,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka01:6001/eureka/,http://eureka02:6002/eureka/,http://eureka03:6003/eureka/
+feign:
+  hystrix:
+    enabled: true

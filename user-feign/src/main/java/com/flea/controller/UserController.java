@@ -27,4 +27,10 @@ public class UserController {
     public Book getuser() {
         return bookService.sellBook();
     }
+
+
+    @GetMapping(value = "/buybook2")
+    public Book getuser2() {
+        return bookService.sellBook();
+    }
 }

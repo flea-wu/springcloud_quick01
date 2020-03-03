@@ -18,6 +18,7 @@
         <module>seller01</module>
         <module>seller02</module>
         <module>user-feign</module>
+        <module>seller03_hystrix</module>
     </modules>
 
 

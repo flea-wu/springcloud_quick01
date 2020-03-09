@@ -19,6 +19,7 @@
         <module>seller02</module>
         <module>user-feign</module>
         <module>seller03_hystrix</module>
+        <module>hystrix_dashboard</module>
     </modules>
 
 

@@ -25,7 +25,7 @@ public class BookController {
     @GetMapping(value = "/buy/book")
     @HystrixCommand(fallbackMethod = "erroBook")
     public Book buyBook() {
-        int a = 1 / 0;
+//        int a = 1 / 0;
         return bookService.sellBook();
     }
 

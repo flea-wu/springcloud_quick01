@@ -1,0 +1,19 @@
+server:
+  port: 7001
+
+spring:
+  application:
+    name: provider
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka01:6001/eureka,http://eureka02:6002/eureka,http://eureka03:6003/eureka
+  instance:
+    instance-id: provider_name01 #自定义服务名称信息（实例名称和应用名称不一样）
+    prefer-ip-address: true #服务路径可以显示ip地址
+info:
+  app.name: provider_seller
+  company.name: provider_seller_company_name
+  build.artifactId: seller #springboot 2.x 使用@动态获取，其他版本需根据具体情况调整
+  build.version: 1.0-SNAPSHOT

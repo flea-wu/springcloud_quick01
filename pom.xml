@@ -21,6 +21,7 @@
         <module>seller03_hystrix</module>
         <module>hystrix_dashboard</module>
         <module>zuul</module>
+        <module>cloud-config</module>
     </modules>
 
 
